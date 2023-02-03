@@ -88,7 +88,7 @@ const Experiences = () => {
     setTabIndex(newTabIndex);
   };
   return (
-    <SectionContainer id="#Experience">
+    <SectionContainer id="Experience">
       <Box
         component={motion.div}
         initial={{ opacity: 0 }}
