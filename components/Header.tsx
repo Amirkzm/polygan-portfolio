@@ -123,12 +123,14 @@ const Header = () => {
             }}
           >
             <Box
-              component={"span"}
+              component={"a"}
               sx={{
                 color: "primary.main",
                 cursor: "pointer",
                 fontSize: "small",
+                textDecoration: "none",
               }}
+              href={`#${text}`}
             >
               0{index + 1}.
             </Box>
