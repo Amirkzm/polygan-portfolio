@@ -172,7 +172,7 @@ const Header = () => {
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <MuiLink href="http://localhost:3000/">
+          <MuiLink href="http://localhost:3000/" sx={{ pt: 1 }}>
             <Logo color={theme.palette.primary.main} />
           </MuiLink>
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 2 }}>

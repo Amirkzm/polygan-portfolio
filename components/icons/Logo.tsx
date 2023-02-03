@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 import * as React from "react";
 import styles from "./Logo.module.css";
 import { motion } from "framer-motion";
