@@ -56,9 +56,12 @@ const CardItem = (props: CardItemProps) => {
           alignItems: "center",
           justifyContent: "space-between",
           gap: 2,
-          height: "100%",
-          padding: "10px 10px 25px 10px",
+          minHeight: "300px",
+          padding: "10px 10px 10px 10px",
           position: "relative",
+          "&:last-child": {
+            pb: 0,
+          },
         }}
       >
         <header
