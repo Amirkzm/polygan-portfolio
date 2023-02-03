@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import Logo from "./icons/Logo";
 import { Link as MuiLink } from "@mui/material";
-import { motion, useAnimationControls } from "framer-motion";
+import { motion } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";

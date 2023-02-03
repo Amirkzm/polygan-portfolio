@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   position: "fixed",

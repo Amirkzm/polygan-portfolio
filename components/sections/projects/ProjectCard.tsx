@@ -44,7 +44,6 @@ const CardItem = (props: CardItemProps) => {
     isHovered,
     npmLink,
     githubLink,
-    ...other
   } = props;
 
   return (

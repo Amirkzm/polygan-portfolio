@@ -1,4 +1,4 @@
-import { CssBaseline, Grid, Paper } from "@mui/material";
+import { CssBaseline, Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
