@@ -1,0 +1,7 @@
+.svgLogo:hover {
+  fill: #414f63;
+}
+
+.svgLogo {
+  cursor: pointer;
+}
