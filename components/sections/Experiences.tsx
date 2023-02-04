@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { styled } from "@mui/system";
 import SectionContainer from "../Container/SectionContainer";
-import { tabContents } from "../../utils/data";
+import { WORK_EXPERIENCE } from "../../utils/data";
 import { motion, Variants } from "framer-motion";
 
 interface TabPanelProps {
@@ -142,7 +142,7 @@ const Experiences = () => {
               left: isMobile ? 40 : 20,
             }}
           >
-            {tabContents.map((tab) => {
+            {WORK_EXPERIENCE.map((tab) => {
               return (
                 <TabPanel key={tab.id} value={tabIndex} index={tab.id}>
                   <Box

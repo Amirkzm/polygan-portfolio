@@ -36,7 +36,7 @@ export const PROJECT_DATA: any[] = [
   },
 ];
 
-export const tabContents = [
+export const WORK_EXPERIENCE = [
   {
     id: 0,
     title: "Front-End developer @ Mehr Gosater",
@@ -76,5 +76,5 @@ export const SOCIAL_ADDRESS = {
   instagram: "https://www.instagram.com/amir.25370",
   twitter: "https://twitter.com/amirkzm91",
   linkedin: "https://www.linkedin.com/in/amir-kazemi-33667045/",
-  github:"https://github.com/amir253700"
+  github: "https://github.com/amir253700",
 };
