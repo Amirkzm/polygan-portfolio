@@ -4,6 +4,7 @@ import AnimatedLogo from "../components/icons/AnimatedLogo";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Box } from "@mui/material";
+import Layout from "../components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,13 +51,8 @@ export default function Home() {
         />
       </Head>
       <main>
-        {isLoading && (
-          <AnimatePresence>
-            <Box component={motion.div} exit={{ y: -500 }}>
-              <AnimatedLogo toggle={showAnimatedLogo} />
-            </Box>
-          </AnimatePresence>
-        )}
+        {isLoading && <AnimatedLogo toggle={showAnimatedLogo} />}
+        <Layout />
       </main>
     </>
   );
