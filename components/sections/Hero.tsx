@@ -29,7 +29,7 @@ const Hero = () => {
         >
           <Typography
             sx={{ color: "primary.main", mb: "1rem" }}
-            variant="body2"
+            variant="body1"
             gutterBottom
           >
             Hi, my name is
@@ -43,7 +43,6 @@ const Hero = () => {
           <Typography
             variant="h1"
             sx={{
-              color: "text.primary",
               fontSize: "clamp(5px,8vw,80px)",
               fontWeight: 700,
               lineHeight: "1.3",
