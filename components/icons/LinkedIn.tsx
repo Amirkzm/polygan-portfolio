@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import theme from "../../utils/theme";
 
-const LinkedIn = () => {
+const LinkedIn = ({
+  hoverEffect = true,
+  width,
+  height,
+}: {
+  hoverEffect?: boolean;
+  width?: number;
+  height?: number;
+}) => {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,9 +24,10 @@ const LinkedIn = () => {
       strokeLinejoin="round"
       transform=" translateY(0) scale(1)"
       whileHover={{
-        stroke: theme.palette.primary.main,
+        stroke:
+          hoverEffect === true ? theme.palette.primary.main : "currentColor",
         cursor: "pointer",
-        transform: "translateY(-4px)",
+        transform: hoverEffect === true ? "translateY(-4px)" : "translateY(0)",
       }}
     >
       <title>Linkedin</title>

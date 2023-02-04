@@ -24,7 +24,8 @@ const Github = ({
       strokeLinejoin="round"
       transform=" translateY(0) scale(1)"
       whileHover={{
-        stroke: theme.palette.primary.main,
+        stroke:
+          hoverEffect === true ? theme.palette.primary.main : "currentColor",
         cursor: "pointer",
         transform: hoverEffect === true ? "translateY(-4px)" : "translateY(0)",
       }}
