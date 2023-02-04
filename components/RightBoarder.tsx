@@ -15,7 +15,6 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
-  // transform: "rotate(90deg)",
   rotate: "90deg",
   marginBottom: "11rem",
   transition: "transform 0.5s",
