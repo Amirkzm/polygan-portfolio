@@ -1,4 +1,4 @@
-import { Box, Typography, Link as MuiLink } from "@mui/material";
+import { Box, Link as MuiLink } from "@mui/material";
 import Github from "./icons/Github";
 import Instagram from "./icons/Instagram";
 import LinkedIn from "./icons/LinkedIn";
@@ -38,18 +38,21 @@ const Footer = () => {
           <Github />
         </MuiLink>
       </Box>
-      <Typography
-        variant="caption"
+      <MuiLink
+        href={`${SOCIAL_ADDRESS.github}/polygan-portfolio`}
+        target="_blank"
         sx={{
           fontWeight: 100,
           fontSize: 18,
           letterSpacing: 0.1,
           fontFamily: "Playfair Display",
+          color: "text.secondary",
+          textDecoration: "none",
           "&:hover": { color: "primary.main", cursor: "pointer" },
         }}
       >
         Designed and developed by Amir Kazemi
-      </Typography>
+      </MuiLink>
     </Box>
   );
 };
