@@ -40,7 +40,7 @@ export default function Home() {
         <title>Amir Kazemi Portfolio</title>
         <meta
           name="description"
-          content="Personal portfolio of Amir Kazemi powered by react and next.js"
+          content="Personal portfolio of Amir Kazemi built with react and next.js"
           key="desc"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
