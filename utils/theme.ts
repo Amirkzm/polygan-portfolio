@@ -67,7 +67,14 @@ const theme = createTheme({
   typography: {
     fontSize: 14,
     smallFontSize: 12,
-    fontFamily: oswald.style.fontFamily,
+    fontFamily: [
+      "Oswald",
+      "Abril_Fatface",
+      "Raleway",
+      "Helvetica",
+      "Arial",
+      "sans-serif",
+    ].join(","),
   },
   shape: {
     borderRadius: 8,
