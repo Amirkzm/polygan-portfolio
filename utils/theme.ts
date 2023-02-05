@@ -1,11 +1,11 @@
 import { createTheme } from "@mui/material";
-import { Oswald } from "@next/font/google";
+import { Oswald, Raleway } from "@next/font/google";
 
 export const oswald = Oswald({
   weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
-  fallback: ["Helvetica", "Arial", "sans-serif"],
+  fallback: ["Raleway", "Helvetica", "Arial", "sans-serif"],
 });
 
 // declare module "@mui/material/styles/createPalette" {
@@ -77,7 +77,7 @@ const theme = createTheme({
 theme.typography.body1 = {
   ...theme.typography,
   fontSize: "clamp(14px,5vw,16px)",
-  lineHeight:1.3,
+  lineHeight: 1.3,
   [theme.breakpoints.up("md")]: { fontSize: "clamp(16px,5vw,18px)" },
 };
 
@@ -85,6 +85,7 @@ theme.typography.h1 = {
   ...theme.typography,
   fontSize: "clamp(19px,5vw,21px)",
   fontWeight: "700",
+  color: theme.palette.text.primary,
   [theme.breakpoints.up("md")]: { fontSize: "clamp(30px,5vw,34px)" },
 };
 
