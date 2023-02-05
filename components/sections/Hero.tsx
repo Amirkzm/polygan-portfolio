@@ -98,6 +98,7 @@ const Hero = () => {
               height: "50px",
               mt: "10%",
               display: "inline-block",
+              fontSize: "clamp(19px,5vw,21px)",
             }}
           >
             show resume
