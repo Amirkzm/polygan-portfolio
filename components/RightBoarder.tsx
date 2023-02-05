@@ -16,12 +16,13 @@ const StyledBox = styled(Box)(({ theme }) => ({
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
   rotate: "90deg",
-  marginBottom: "11rem",
-  transition: "transform 0.5s",
+  marginBottom: "130px",
+  transition: "all 0.5s",
   "&:hover": {
     color: theme.palette.primary.main,
     cursor: "pointer",
-    transform: "translateX(-3px)",
+    transform: "translateX(-20px)",
+    letterSpacing: "1px",
   },
 }));
 
