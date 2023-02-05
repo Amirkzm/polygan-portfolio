@@ -18,14 +18,16 @@ const LinkedIn = ({
       width="30"
       height="30"
       fill="none"
-      stroke="currentColor"
+      stroke={theme.palette.background.default}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      transform=" translateY(0) scale(1)"
+      transform="translateY(0) scale(1)"
       whileHover={{
         stroke:
-          hoverEffect === true ? theme.palette.primary.main : "currentColor",
+          hoverEffect === true
+            ? theme.palette.primary.main
+            : theme.palette.background.default,
         cursor: "pointer",
         transform: hoverEffect === true ? "translateY(-4px)" : "translateY(0)",
       }}
