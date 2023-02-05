@@ -2,8 +2,6 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import AnimatedLogo from "../components/icons/AnimatedLogo";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Box } from "@mui/material";
 import Layout from "../components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
