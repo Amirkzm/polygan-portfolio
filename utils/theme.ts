@@ -99,7 +99,7 @@ theme.typography.h2 = {
 theme.typography.h3 = {
   ...theme.typography,
   fontSize: "clamp(16px,5vw,18px)",
-  fontWeight: "500",
+  fontWeight: "400",
   [theme.breakpoints.up("md")]: { fontSize: "clamp(23px,5vw,26px)" },
 };
 
