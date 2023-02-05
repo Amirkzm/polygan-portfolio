@@ -60,7 +60,9 @@ const resume = () => {
           gap: 5,
         }}
       >
-        <Typography variant="h1">Resume</Typography>
+        <Typography variant="h1" fontFamily="Abril Fatface">
+          Resume
+        </Typography>
         <Paper
           sx={{
             width: "100%",
@@ -69,7 +71,11 @@ const resume = () => {
             p: "10px 15px",
           }}
         >
-          <Typography variant="body1" fontFamily={"Raleway"} fontWeight="500">
+          <Typography
+            variant="body1"
+            fontFamily="Abril Fatface"
+            fontWeight="600"
+          >
             Amir Kazemi
           </Typography>
           <Box sx={{ display: "flex" }}>
