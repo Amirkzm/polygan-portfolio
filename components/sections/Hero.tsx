@@ -76,7 +76,7 @@ const Hero = () => {
             }}
             variant="h3"
           >
-            I'm a UI/UX designer and developer Specializing in building and
+            I&apos;m a UI/UX designer and developer Specializing in building and
             developing modern responsive websites using{" "}
             <Box component="span" sx={{ color: "primary.main" }}>
               React JS

@@ -196,7 +196,7 @@ const resume = () => {
             </StyledListItem>
             <StyledListItem>
               <ListItemText inset>
-                "My main goal was to extract the required features of candels
+                My main goal was to extract the required features of candels
                 base on previous years data and organize them to use in machin
                 learning and AI algorithms.
               </ListItemText>

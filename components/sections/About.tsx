@@ -138,7 +138,7 @@ const About = () => {
             solution.
             <br></br>
             <br></br>
-            here a list of some technologies that I've been working with
+            here a list of some technologies that I&apos;ve been working with
             recently:
           </Typography>
 
