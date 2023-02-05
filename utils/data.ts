@@ -72,6 +72,80 @@ export const WORK_EXPERIENCE = [
   },
 ];
 
+export const SKILLS_LIST = [
+  {
+    id: 0,
+    skillName: "JavaScript",
+    imgSrc: "/../public/assets/skills/javascript.png",
+  },
+  {
+    id: 1,
+    skillName: "TypeScript",
+    imgSrc: "/../public/assets/skills/typescript.png",
+  },
+  {
+    id: 2,
+    skillName: "React",
+    imgSrc: "/../public/assets/skills/react.png",
+  },
+  {
+    id: 3,
+    skillName: "Next.js",
+    imgSrc: "/../public/assets/skills/nextjs.png",
+  },
+  {
+    id: 4,
+    skillName: "HTML",
+    imgSrc: "/../public/assets/skills/html.png",
+  },
+  {
+    id: 5,
+    skillName: "CSS",
+    imgSrc: "/../public/assets/skills/css.png",
+  },
+  {
+    id: 11,
+    skillName: "MUI",
+    imgSrc: "/../public/assets/skills/mui.png",
+  },
+  {
+    id: 12,
+    skillName: "GitHub",
+    imgSrc: "/../public/assets/skills/github1.png",
+  },
+
+  {
+    id: 6,
+    skillName: "Redux",
+    imgSrc: "/../public/assets/skills/redux.png",
+  },
+  {
+    id: 7,
+    skillName: "Tailwind",
+    imgSrc: "/../public/assets/skills/tailwind.png",
+  },
+  {
+    id: 8,
+    skillName: "Express.js",
+    imgSrc: "/../public/assets/skills/expressjs.png",
+  },
+  {
+    id: 9,
+    skillName: "Webpack",
+    imgSrc: "/../public/assets/skills/webpack.png",
+  },
+  {
+    id: 10,
+    skillName: "Rollup",
+    imgSrc: "/../public/assets/skills/rollup.png",
+  },
+  {
+    id: 11,
+    skillName: "Babel",
+    imgSrc: "/../public/assets/skills/babel.png",
+  },
+];
+
 export const SOCIAL_ADDRESS = {
   instagram: "https://www.instagram.com/amir.25370",
   twitter: "https://twitter.com/amirkzm91",
