@@ -1,18 +1,9 @@
-import {
-  Box,
-  Button,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { motion } from "framer-motion";
 import SectionContainer from "../Container/SectionContainer";
 
 const Hero = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <SectionContainer id="#Hero">
       <Box
