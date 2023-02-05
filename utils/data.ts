@@ -39,7 +39,7 @@ export const PROJECT_DATA: any[] = [
 export const WORK_EXPERIENCE = [
   {
     id: 0,
-    title: "Front-End developer @ Mehr Gosater",
+    title: "Front-End Developer @ Mehrpars Co",
     date: "2021-2022",
     partOneDesc:
       "Write modern, performant, maintainable code and update previous written code from vanilla javascript to React components",
@@ -50,10 +50,10 @@ export const WORK_EXPERIENCE = [
   },
   {
     id: 1,
-    title: "Freelance python Developer",
+    title: "Freelance Python Developer",
     date: "2019-2020",
     partOneDesc:
-      "Corporating with a machin learnign engineer to desing a system to predict and suggest stock market.",
+      "Corporating with a two machin learnign engineers to desing a system to predict stock market.",
     partTwoDesc:
       "My main goal was to extract the required features of candels base on previous years data and organize them to use in machin learning and AI algorithms.",
     partThreeDesc:
@@ -61,7 +61,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     id: 2,
-    title: "Back-End Developer @ Shiraz University Game Festival dev team",
+    title: "Back-End Developer @ Shiraz University Game Festival Dev Team",
     date: "2018-2019",
     partOneDesc:
       "Design and develope database with PostgreSQL and determine the relation between models for a website for Shiraz game festival competition.",
