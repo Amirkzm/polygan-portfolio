@@ -1,11 +1,11 @@
 import { createTheme } from "@mui/material";
-import { Oswald, Raleway } from "@next/font/google";
+import { Oswald, Raleway, Abril_Fatface } from "@next/font/google";
 
 export const oswald = Oswald({
   weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
-  fallback: ["Raleway", "Helvetica", "Arial", "sans-serif"],
+  fallback: ["Abril_Fatface", "Raleway", "Helvetica", "Arial", "sans-serif"],
 });
 
 // declare module "@mui/material/styles/createPalette" {
