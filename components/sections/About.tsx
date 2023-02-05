@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Image from "next/image";
 import SectionContainer from "../Container/SectionContainer";
-import profilePic from "../../public/images/profile.jpg";
+import profilePic from "../../public/assets/avatar/profile.jpg";
 import { motion, Variants } from "framer-motion";
 
 const StyledBox = styled(Box)(({ theme }) => ({
