@@ -5,12 +5,13 @@ import {
   Paper,
   styled,
   Typography,
+  Link as MuiLink,
 } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Github from "../components/icons/Github";
 import LinkedIn from "../components/icons/LinkedIn";
 import SkillItem from "../components/SkillItem";
-import { SKILLS_LIST } from "../utils/data";
+import { SKILLS_LIST, SOCIAL_ADDRESS } from "../utils/data";
 import Head from "next/head";
 
 const Divider = styled(Box)(({ theme }) => ({
@@ -82,8 +83,12 @@ const resume = () => {
             Amir Kazemi
           </Typography>
           <Box sx={{ display: "flex" }}>
-            <Github hoverEffect={false} />
-            <LinkedIn hoverEffect={false} />
+            <MuiLink href={SOCIAL_ADDRESS.github} target={"_blank"}>
+              <Github hoverEffect={false} />
+            </MuiLink>
+            <MuiLink href={SOCIAL_ADDRESS.linkedin} target={"_blank"}>
+              <LinkedIn hoverEffect={false} />
+            </MuiLink>
           </Box>
         </Paper>
         <Divider />
