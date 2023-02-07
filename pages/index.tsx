@@ -1,37 +1,16 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import AnimatedLogo from "../components/icons/AnimatedLogo";
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [showAnimatedLogo, setShowAnimatedLogo] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const begin = setTimeout(() => {
-      setIsLoading(true);
-    }, 10);
-    const start = setTimeout(() => {
-      setShowAnimatedLogo(true);
-    }, 1000);
-
-    const end = setTimeout(() => {
-      setShowAnimatedLogo(false);
-    }, 3000);
-
-    const finish = setTimeout(() => {
+    const startLoading = setTimeout(() => {
       setIsLoading(false);
     }, 4000);
-
-    return () => {
-      clearTimeout(begin);
-      clearTimeout(start);
-      clearTimeout(finish);
-      clearTimeout(end);
-    };
+    return () => clearTimeout(startLoading);
   }, []);
 
   return (
@@ -48,8 +27,8 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <main>
-        {isLoading && <AnimatedLogo toggle={showAnimatedLogo} />}
-        <Layout />
+        {isLoading && <AnimatedLogo />}
+        {!isLoading && <Layout />}
       </main>
     </>
   );
