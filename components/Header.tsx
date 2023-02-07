@@ -7,13 +7,15 @@ import {
   Toolbar,
   Typography,
   useTheme,
+  Link as MuiLink,
+  ListItem,
 } from "@mui/material";
 import Logo from "./icons/Logo";
-import { Link as MuiLink } from "@mui/material";
 import { motion } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
@@ -39,7 +41,7 @@ const Header = () => {
     },
   };
 
-  const linksContent = ["About", "Experience", "Work", "Contact"];
+  const linksContent = ["Home", "About", "Experience", "Work", "Contact"];
 
   const underlineMotion = {
     rest: {
@@ -60,11 +62,6 @@ const Header = () => {
         duration: 0.3,
       },
     },
-  };
-
-  const linkMotion = {
-    rest: { color: "white" },
-    hover: { color: theme.palette.primary.main },
   };
 
   const list = () => (
@@ -111,19 +108,22 @@ const Header = () => {
       </IconButton>
       <List sx={{ mt: "30%" }}>
         {linksContent.map((text, index) => (
-          <motion.li
+          <ListItem
             key={text}
+            component={motion.li}
             initial="rest"
-            animate="rest"
             whileHover="hover"
-            style={{
+            sx={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              "&:hover *": {
+                color: "primary.main",
+              },
             }}
           >
             <Box
-              component={"a"}
+              component={Link}
               sx={{
                 color: "primary.main",
                 cursor: "pointer",
@@ -134,28 +134,65 @@ const Header = () => {
             >
               0{index + 1}.
             </Box>
-            <Box sx={{ position: "relative", mb: 7 }}>
-              <MuiLink
-                href={`#${text}`}
-                component={motion.a}
-                variants={linkMotion}
-                sx={{
-                  mb: 7,
+            <Box
+              sx={{
+                position: "relative",
+                mb: 4,
+                "&:hover *": { color: "primary.main" },
+              }}
+            >
+              <Link
+                href={`/#${text}`}
+                style={{
                   color: "text.primary",
                   textDecoration: "none",
                   cursor: "pointer",
+                  fontFamily: "oswald",
                 }}
-                fontFamily="oswald"
               >
-                {text}
-              </MuiLink>
+                <Typography component={"span"} sx={{ color: "text.primary" }}>
+                  {text}
+                </Typography>
+              </Link>
+
               <Box
                 component={motion.span}
                 variants={underlineMotion}
                 sx={{ position: "absolute", top: 25, left: 0 }}
               ></Box>
             </Box>
-          </motion.li>
+
+            {/* <Box
+              sx={{
+                position: "relative",
+                mb: 7,
+                "&:hover *": { color: "primary.main" },
+              }}
+            >
+              <Link
+                href={`#${text}`}
+                // component={motion.a}
+                // variants={linkMotion}
+                style={{
+                  marginBottom: 7,
+                  color: "text.primary",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  fontFamily: "oswald",
+                }}
+              >
+                <Typography component={"span"} sx={{ color: "text.primary" }}>
+                  {text}
+                </Typography>
+              </Link>
+
+              <Box
+                component={motion.span}
+                variants={underlineMotion}
+                sx={{ position: "absolute", top: 25, left: 0 }}
+              ></Box>
+            </Box> */}
+          </ListItem>
         ))}
       </List>
     </Box>
@@ -172,25 +209,24 @@ const Header = () => {
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <MuiLink href="http://localhost:3000/" sx={{ pt: 1 }}>
+          <MuiLink href="/" sx={{ pt: 1 }}>
             <Logo color={theme.palette.primary.main} />
           </MuiLink>
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 2 }}>
             {linksContent.map((item, index) => {
               return (
-                <motion.div
+                <Box
+                  sx={{ "&:hover *": { color: "primary.main" } }}
+                  component={motion.div}
                   initial={{ opacity: 0, translateX: -2, translateY: -10 }}
                   animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                   transition={{ duration: 0.2, delay: (index + 1) * 0.1 }}
                   key={index}
                 >
-                  <MuiLink
-                    href={`#${item}`}
-                    sx={{
-                      display: "flex",
-                      textDecoration: "none",
-                      cursor: "pointer",
-                    }}
+                  <Link
+                    href={`/#${item}`}
+                    scroll={false}
+                    style={{ textDecoration: "none" }}
                   >
                     <Typography
                       component={"span"}
@@ -202,8 +238,8 @@ const Header = () => {
                     <Typography component={"span"} sx={linksSX}>
                       {item}
                     </Typography>
-                  </MuiLink>
-                </motion.div>
+                  </Link>
+                </Box>
               );
             })}
           </Box>
