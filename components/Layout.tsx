@@ -1,6 +1,5 @@
 import { CssBaseline, Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Hero from "./sections/Hero";
 import RightBoarder from "./RightBoarder";
@@ -16,21 +15,11 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const [animationStart, setAnimationStart] = useState<boolean>(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimationStart(true);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <React.Fragment>
+    <>
       <CssBaseline />
       <Container>
-        {animationStart && (
+        {
           <Box
             sx={{
               display: "flex",
@@ -67,11 +56,10 @@ const Layout = ({ children }: LayoutProps) => {
               </Grid>
             </Box>
           </Box>
-        )}
-
+        }
         {children}
       </Container>
-    </React.Fragment>
+    </>
   );
 };
 
