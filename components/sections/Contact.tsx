@@ -50,11 +50,11 @@ const Contact = () => {
         >
           <Typography
             variant="body1"
-            sx={{ maxWidth: { md: "60%" }, textAlign: "center" }}
+            sx={{ maxWidth: { xs: "80%", sm: "60%" }, textAlign: "center" }}
           >
-            Although I’m not currently looking for any new opportunities, my
-            inbox is always open. Whether you have a question or just want to
-            say hi, I’ll try my best to get back to you!
+            I’m currently open for new opportunities, my inbox is always open.
+            Whether you have a question or just want to say hi, I’ll try my best
+            to get back to you!
           </Typography>
         </Box>
         <Box component={motion.span} variants={childrenVariant}>
