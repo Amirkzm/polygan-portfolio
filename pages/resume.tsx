@@ -13,6 +13,8 @@ import LinkedIn from "../components/icons/LinkedIn";
 import SkillItem from "../components/SkillItem";
 import { SKILLS_LIST, SOCIAL_ADDRESS } from "../utils/data";
 import Head from "next/head";
+import { useContext } from "react";
+import LoadingContext from "../context/LoadingContext";
 
 const Divider = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -39,6 +41,8 @@ const StyledListItem = styled("li")(({ theme }) => ({
   },
 }));
 const resume = () => {
+  const loadingCtx = useContext(LoadingContext);
+  console.log(loadingCtx.isLoading);
   return (
     <>
       <Head>
@@ -59,7 +63,7 @@ const resume = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          p: "50px 10px",
+          p: "100px 10px",
           minHeight: "100vh",
           gap: 5,
         }}
