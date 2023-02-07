@@ -26,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
               flexDirection: "column",
             }}
           >
-            <Header />
+            {/* <Header /> */}
 
             <Box sx={{}}>
               <Grid container spacing={3} direction="row">
@@ -48,7 +48,7 @@ const Layout = ({ children }: LayoutProps) => {
                   <Experiences />
                   <ProjectLists />
                   <Contact />
-                  <Footer />
+                  {/* <Footer /> */}
                 </Grid>
                 <Grid item xs={0} md={1}>
                   <RightBoarder />
