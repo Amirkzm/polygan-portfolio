@@ -1,17 +1,21 @@
 import Head from "next/head";
 import AnimatedLogo from "../components/icons/AnimatedLogo";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Layout from "../components/Layout";
+import LoadingContext from "../context/LoadingContext";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  // const [isLoading, setIsLoading] = useState<boolean>(true);
+  const loadingCtx = useContext(LoadingContext);
+  // const isLoading = loadingCtx.isLoading;
 
   useEffect(() => {
-    const startLoading = setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-    return () => clearTimeout(startLoading);
+    if (loadingCtx.isLoading) {
+      loadingCtx.finishLoading();
+    }
   }, []);
+
+  console.log(loadingCtx.isLoading);
 
   return (
     <>
@@ -27,8 +31,8 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <main>
-        {isLoading && <AnimatedLogo />}
-        {!isLoading && <Layout />}
+        {loadingCtx.isLoading && <AnimatedLogo />}
+        {!loadingCtx.isLoading && <Layout />}
       </main>
     </>
   );
