@@ -140,7 +140,7 @@ export const SKILLS_LIST = [
     imgSrc: "/assets/skills/rollup.png",
   },
   {
-    id: 11,
+    id: 13,
     skillName: "Babel",
     imgSrc: "/assets/skills/babel.png",
   },
