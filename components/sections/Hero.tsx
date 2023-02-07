@@ -1,11 +1,12 @@
-import { Box, Button, Link, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import SectionContainer from "../Container/SectionContainer";
 
 const Hero = () => {
   return (
-    <SectionContainer id="#Hero">
+    <SectionContainer id="Home">
       <Box
         sx={{
           display: "flex",
