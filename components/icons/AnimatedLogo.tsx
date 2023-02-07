@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import theme from "../../utils/theme";
 import { motion } from "framer-motion";
 
-function AnimatedLogo({ toggle }: { toggle: boolean }) {
+function AnimatedLogo() {
   return (
     <Box
       sx={{
