@@ -161,37 +161,6 @@ const Header = () => {
                 sx={{ position: "absolute", top: 25, left: 0 }}
               ></Box>
             </Box>
-
-            {/* <Box
-              sx={{
-                position: "relative",
-                mb: 7,
-                "&:hover *": { color: "primary.main" },
-              }}
-            >
-              <Link
-                href={`#${text}`}
-                // component={motion.a}
-                // variants={linkMotion}
-                style={{
-                  marginBottom: 7,
-                  color: "text.primary",
-                  textDecoration: "none",
-                  cursor: "pointer",
-                  fontFamily: "oswald",
-                }}
-              >
-                <Typography component={"span"} sx={{ color: "text.primary" }}>
-                  {text}
-                </Typography>
-              </Link>
-
-              <Box
-                component={motion.span}
-                variants={underlineMotion}
-                sx={{ position: "absolute", top: 25, left: 0 }}
-              ></Box>
-            </Box> */}
           </ListItem>
         ))}
       </List>
