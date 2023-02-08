@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <LoadingProvider>
       <ThemeProvider theme={theme}>
         {!loadingCtx.isLoading && <Header />}
+        {/* {console.log(loadingCtx.isLoading)} */}
         <Component {...pageProps} />
         {!loadingCtx.isLoading && <Footer />}
       </ThemeProvider>
