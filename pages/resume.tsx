@@ -15,6 +15,7 @@ import { SKILLS_LIST, SOCIAL_ADDRESS } from "../utils/data";
 import Head from "next/head";
 import { useContext } from "react";
 import LoadingContext from "../context/LoadingContext";
+import PathContainer from "../components/Container/PathContainer";
 
 const Divider = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -44,7 +45,7 @@ const resume = () => {
   const loadingCtx = useContext(LoadingContext);
   console.log(loadingCtx.isLoading);
   return (
-    <>
+    <PathContainer>
       <Head>
         <title>Amir Kazemi Portfolio</title>
         <meta
@@ -311,7 +312,7 @@ const resume = () => {
           </Box>
         </Box>
       </Container>
-    </>
+    </PathContainer>
   );
 };
 

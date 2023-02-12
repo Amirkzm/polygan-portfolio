@@ -3,6 +3,7 @@ import AnimatedLogo from "../components/icons/AnimatedLogo";
 import { useContext, useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import LoadingContext from "../context/LoadingContext";
+import PathContainer from "../components/Container/PathContainer";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -32,7 +33,11 @@ export default function Home() {
       </Head>
       <main>
         {loadingCtx.isLoading && <AnimatedLogo />}
-        {!loadingCtx.isLoading && <Layout />}
+        {!loadingCtx.isLoading && (
+          <PathContainer>
+            <Layout />
+          </PathContainer>
+        )}
       </main>
     </>
   );
