@@ -41,7 +41,7 @@ const StyledListItem = styled("li")(({ theme }) => ({
     height: "5px",
   },
 }));
-const resume = () => {
+const Resume = () => {
   const loadingCtx = useContext(LoadingContext);
   console.log(loadingCtx.isLoading);
   return (
@@ -316,4 +316,4 @@ const resume = () => {
   );
 };
 
-export default resume;
+export default Resume;
