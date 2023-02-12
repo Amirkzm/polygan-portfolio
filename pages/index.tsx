@@ -6,15 +6,13 @@ import LoadingContext from "../context/LoadingContext";
 import PathContainer from "../components/Container/PathContainer";
 
 export default function Home() {
-  // const [isLoading, setIsLoading] = useState<boolean>(true);
   const loadingCtx = useContext(LoadingContext);
-  // const isLoading = loadingCtx.isLoading;
 
   useEffect(() => {
     if (loadingCtx.isLoading) {
       loadingCtx.finishLoading();
     }
-  }, []);
+  }, [loadingCtx.isLoading]);
 
   console.log(loadingCtx.isLoading);
 
