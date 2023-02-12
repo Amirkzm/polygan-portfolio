@@ -13,10 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <LoadingProvider>
       <ThemeProvider theme={theme}>
-        {!loadingCtx.isLoading && <Header />}
+        {/* {!loadingCtx.isLoading && <Header />} */}
         {/* {console.log(loadingCtx.isLoading)} */}
         <Component {...pageProps} />
-        {!loadingCtx.isLoading && <Footer />}
+        {/* {!loadingCtx.isLoading && <Footer />} */}
       </ThemeProvider>
     </LoadingProvider>
   );
