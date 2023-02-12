@@ -9,6 +9,7 @@ import {
 import { Container, typography } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
+import PathContainer from "../components/Container/PathContainer";
 
 const ErrorNumberTypo = styled(Typography)(({ theme }) => ({
   fontSize: "clamp(140px,6vw,160px)",
@@ -41,7 +42,7 @@ const NotFound = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      <Container>
+      <PathContainer>
         <CssBaseline />
         <Box
           sx={{
@@ -71,7 +72,7 @@ const NotFound = () => {
             </Link>
           </Box>
         </Box>
-      </Container>
+      </PathContainer>
     </>
   );
 };
