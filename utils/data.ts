@@ -1,15 +1,33 @@
 export const PROJECT_DATA: any[] = [
   {
     id: 0,
+    title: "Spotify Clone",
+    description:
+      "A music app built upon the Spotify API that allows users to search, find new featured songs, play and listen to any music that can be found on Spotify.",
+    techList: ["React JS", "Typescript", "MUI", "Redux Toolkit", "Vite"],
+    npmLink: "",
+    githubLink: "https://github.com/amir253700/Spotify-clone",
+  },
+  {
+    id: 1,
+    title: "Admin Panel",
+    description:
+      "A fully functional admin panel that allows users to manage teams, charts, book appointments, and more.",
+    techList: ["React JS", "MUI", "Vite"],
+    npmLink: "",
+    githubLink: "https://github.com/amir253700/admin-panel",
+  },
+  {
+    id: 2,
     title: "Infinite Scroll",
     description:
-      "react-infinite-scroll is a package that provides smooth scrooling on a long list of items when items need to be load from a server on the fly.",
+      "react-infinite-scroll is a package that provides smooth scrolling on a long list of items when items need to be loaded from a server on the fly.",
     techList: ["React JS", "Typescript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amirkzm/react-infinite-scroll",
     githubLink: "https://github.com/amir253700/react-infinite-scroll",
   },
   {
-    id: 1,
+    id: 3,
     title: "Auto Complete",
     description: "A search auto-completer with dynamic backend support.",
     techList: ["React JS", "Typescript", "Rollup"],
@@ -17,19 +35,28 @@ export const PROJECT_DATA: any[] = [
     githubLink: "https://github.com/amir253700/react-auto-complete-input",
   },
   {
-    id: 2,
+    id: 4,
+    title: "Youtube Clone",
+    description:
+      "A YouTube clone that provides users with an interface that closely resembles the YouTube app, with the ability to search for and watch YouTube videos, view related videos, and see and post comments.",
+    techList: ["React", "Typescript", "Context API"],
+    npmLink: "",
+    githubLink: "https://github.com/amir253700/youtube-clone",
+  },
+  {
+    id: 5,
     title: "Food Order",
     description:
-      "A simple food order app using React that fetch data from the server using custom hooks",
+      "A simple food order app using React that fetches data from the server using custom hooks.",
     techList: ["React", "Javascript", "Tailwind"],
     npmLink: "",
     githubLink: "https://github.com/amir253700/Food-order",
   },
   {
-    id: 3,
+    id: 6,
     title: "Use Conditional Effect",
     description:
-      "This is a small react hook library that extends the capabilities of react useEffect hook. this allows the user to to stop execution of the useEffect under specified condition inside hook's function regardless of the change of dependencies.",
+      "This is a small React hook library that extends the capabilities of the React useEffect hook. This allows the user to stop the execution of the useEffect under specified conditions inside the hook's function, regardless of the change of dependencies.",
     techList: ["React", "TypeScript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amir253700/use-conditional-effect",
     githubLink: "https://github.com/amir253700/useConditionalEffect",
@@ -42,33 +69,33 @@ export const WORK_EXPERIENCE = [
     title: "Front-End Developer @ Mehrpars Co",
     date: "2021-2022",
     partOneDesc:
-      "Write modern, performant, maintainable code and update previous written code from vanilla javascript to React components",
+      "Wrote modern, performant, maintainable code and updated previously written code from vanilla JavaScript to React components.",
     partTwoDesc:
-      "convert Existing CBC (class-based components) to funtional hook and try to renew the code structure.",
+      "Converted existing CBC (class-based components) to functional hooks and tried to renew the code structure.",
     partThreeDesc:
-      "Communicate with multi-disciplinary teams of engineers and designers on a daily basis",
+      "Communicated with multi-disciplinary teams of engineers and designers on a daily basis.",
   },
   {
     id: 1,
     title: "Freelance Python Developer",
     date: "2019-2020",
     partOneDesc:
-      "Corporating with a two machin learnign engineers to desing a system to predict stock market.",
+      "Collaborated with two machine learning engineers to design a system to predict the stock market.",
     partTwoDesc:
-      "My main goal was to extract the required features of candels base on previous years data and organize them to use in machin learning and AI algorithms.",
+      "My main goal was to extract the required features of candles based on previous year's data and organize them to use in machine learning and AI algorithms.",
     partThreeDesc:
-      "Working with Numpy and panda was the main tools to achieve the above mentioned tasks.",
+      "Worked with NumPy and Pandas as the main tools to achieve the above-mentioned tasks.",
   },
   {
     id: 2,
     title: "Back-End Developer @ Shiraz University Game Festival Dev Team",
     date: "2018-2019",
     partOneDesc:
-      "Design and develope database with PostgreSQL and determine the relation between models for a website for Shiraz game festival competition.",
+      "Designed and developed a database with PostgreSQL and determined the relation between models for a website for the Shiraz game festival competition.",
     partTwoDesc:
-      "develope and implement the ability of user registeration,selling ticket, time table of matches,news, events and so on.",
+      "Developed and implemented the ability of user registration, selling tickets, timetable of matches, news, events, and so on.",
     partThreeDesc:
-      "I have developed a Rest API in corporating with a team of back-end and front-end developers.",
+      "Developed a Rest API in collaboration with a team of back-end and front-end developers.",
   },
 ];
 
