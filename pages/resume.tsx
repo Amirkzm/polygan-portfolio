@@ -209,21 +209,21 @@ const Resume = () => {
           <List>
             <StyledListItem>
               <ListItemText inset>
-                I have Corporated with a two machin learnign engineers to desing
-                a system to predict stock market.
+                I have collaborated with two machine learning engineers to
+                design a system to predict the stock market.
               </ListItemText>
             </StyledListItem>
             <StyledListItem>
               <ListItemText inset>
-                My main goal was to extract the required features of candels
-                base on previous years data and organize them to use in machin
+                My main goal was to extract the required features of candles
+                based on previous years data and organize them to use in machine
                 learning and AI algorithms.
               </ListItemText>
             </StyledListItem>
             <StyledListItem>
               <ListItemText inset>
-                Working with Numpy and panda was the main tools to achieve the
-                above mentioned tasks
+                Working with NumPy and Pandas was the main tools to achieve the
+                above mentioned tasks.
               </ListItemText>
             </StyledListItem>
           </List>
@@ -243,15 +243,17 @@ const Resume = () => {
           <List>
             <StyledListItem>
               <ListItemText inset>
-                Design and develope database with PostgreSQL and determine the
-                relation between models for a website for Shiraz game festival
-                competition.
+                Design and develop a database with PostgreSQL and determine the
+                relationships between models for a website for the Shiraz Game
+                Festival competition.
               </ListItemText>
             </StyledListItem>
             <StyledListItem>
               <ListItemText inset>
-                develope and implement the ability of user registeration,selling
-                ticket, time table of matches,news, events and so on.
+                Develop and implement the ability for users to register, buy and
+                sell tickets, view the timetable of matches, read news and
+                updates, and view upcoming events on the website for the Shiraz
+                game festival competition.
               </ListItemText>
             </StyledListItem>
             <StyledListItem>

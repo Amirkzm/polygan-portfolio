@@ -122,19 +122,19 @@ const About = () => {
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
             Hello! My name is Amir and I enjoy creating things that live on the
             internet. My interest in web development started back in 2017 when I
-            decided to devolope simple online quiz app in my free time for a
-            non-profite organization. I started learning Django and after
-            finishing some small-size projects, I Developed a complete Rest API
-            for Shiraz University Game festival with Django Rest Framework.
+            decided to develop a simple online quiz app in my free time for a
+            non-profit organization. I started learning Django, and after
+            finishing some small-size projects, I developed a complete Rest API
+            for the Shiraz University Game festival with Django Rest Framework.
             <br></br>
             <br></br>
-            Back in mid 2020, I got familiar with a React JS and the world of
-            javascript front-end technologies. It seemed quit enchanting and I
-            started learning React. In 2021 I started to work at Mehr Gostaer
-            company as React front-end developer.
+            Back in mid-2020, I got familiar with React JS and the world of
+            JavaScript front-end technologies. It seemed quite enchanting, and I
+            started learning React. In 2021, I started to work at Mehr Gostaer
+            company as a React front-end developer.
             <br></br>
-            <br></br>I enjoy coding, and working as a team member and arguing
-            and challenging the consepts on the table till we find the best
+            <br></br>I enjoy coding, working as a team member, and arguing and
+            challenging the concepts on the table until we find the best
             solution.
             <br></br>
             <br></br>
