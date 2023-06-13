@@ -6,7 +6,7 @@ export const PROJECT_DATA: any[] = [
       "A music app built upon the Spotify API that allows users to search, find new featured songs, play and listen to any music that can be found on Spotify.",
     techList: ["React JS", "Typescript", "MUI", "Redux Toolkit", "Vite"],
     npmLink: "",
-    githubLink: "https://github.com/amir253700/Spotify-clone",
+    githubLink: "https://github.com/amirkzm/Spotify-clone",
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ export const PROJECT_DATA: any[] = [
       "A fully functional admin panel that allows users to manage teams, charts, book appointments, and more.",
     techList: ["React JS", "MUI", "Vite"],
     npmLink: "",
-    githubLink: "https://github.com/amir253700/admin-panel",
+    githubLink: "https://github.com/amirkzm/admin-panel",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const PROJECT_DATA: any[] = [
       "react-infinite-scroll is a package that provides smooth scrolling on a long list of items when items need to be loaded from a server on the fly.",
     techList: ["React JS", "Typescript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amirkzm/react-infinite-scroll",
-    githubLink: "https://github.com/amir253700/react-infinite-scroll",
+    githubLink: "https://github.com/amirkzm/react-infinite-scroll",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const PROJECT_DATA: any[] = [
     description: "A search auto-completer with dynamic backend support.",
     techList: ["React JS", "Typescript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amirkzm/react-auto-complete",
-    githubLink: "https://github.com/amir253700/react-auto-complete-input",
+    githubLink: "https://github.com/amirkzm/react-auto-complete-input",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const PROJECT_DATA: any[] = [
       "A YouTube clone that provides users with an interface that closely resembles the YouTube app, with the ability to search for and watch YouTube videos, view related videos, and see and post comments.",
     techList: ["React", "Typescript", "Context API"],
     npmLink: "",
-    githubLink: "https://github.com/amir253700/youtube-clone",
+    githubLink: "https://github.com/amirkzm/youtube-clone",
   },
   {
     id: 6,
@@ -49,8 +49,8 @@ export const PROJECT_DATA: any[] = [
     description:
       "This is a small React hook library that extends the capabilities of the React useEffect hook. This allows the user to stop the execution of the useEffect under specified conditions inside the hook's function, regardless of the change of dependencies.",
     techList: ["React", "TypeScript", "Rollup"],
-    npmLink: "https://www.npmjs.com/package/@amir253700/use-conditional-effect",
-    githubLink: "https://github.com/amir253700/useConditionalEffect",
+    npmLink: "https://www.npmjs.com/package/@amirkzm/use-conditional-effect",
+    githubLink: "https://github.com/amirkzm/useConditionalEffect",
   },
 ];
 
@@ -168,5 +168,5 @@ export const SOCIAL_ADDRESS = {
   instagram: "https://www.instagram.com/amir.25370",
   twitter: "https://twitter.com/amirkzm91",
   linkedin: "https://www.linkedin.com/in/amir-kazemi-33667045/",
-  github: "https://github.com/amir253700",
+  github: "https://github.com/amirkzm",
 };
