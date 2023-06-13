@@ -22,7 +22,7 @@ const ProjectLists = () => {
   return (
     <SectionContainer id="Work">
       <Typography variant="h2" sx={{ textAlign: "center", mb: 5 }}>
-        Some of my React projects
+        Some of my projects
       </Typography>
       <Box
         sx={{
