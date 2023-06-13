@@ -57,7 +57,7 @@ export const PROJECT_DATA: any[] = [
 export const WORK_EXPERIENCE = [
   {
     id: 0,
-    title: "Front-End Developer @ Mehr Gostar Co",
+    title: "Front-End Developer @Mehre Pars Co",
     date: "2021-2022",
     partOneDesc:
       "Wrote modern, performant, maintainable code and updated previously written code from vanilla JavaScript to React components.",
