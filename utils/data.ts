@@ -44,15 +44,6 @@ export const PROJECT_DATA: any[] = [
     githubLink: "https://github.com/amir253700/youtube-clone",
   },
   {
-    id: 5,
-    title: "Food Order",
-    description:
-      "A simple food order app using React that fetches data from the server using custom hooks.",
-    techList: ["React", "Javascript", "Tailwind"],
-    npmLink: "",
-    githubLink: "https://github.com/amir253700/Food-order",
-  },
-  {
     id: 6,
     title: "Use Conditional Effect",
     description:
