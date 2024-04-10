@@ -10,7 +10,6 @@ const cardAnimation = {
     x: 0,
     y: 0,
     transition: {
-      // staggerChildren: 0.5,
       delay: i * 0.2,
       duration: 0.5,
     },
@@ -48,6 +47,7 @@ const ProjectLists = () => {
               projectTechList={item.techList}
               githubLink={item.githubLink}
               npmLink={item.npmLink}
+              websiteLink={item.websiteLink}
             />
           </Box>
         ))}

@@ -9,7 +9,6 @@ const StyledSection = styled("section")(({ theme }) => ({
   justifyContent: "center",
   lineHeight: "1.1",
   padding: "100px 10px",
-  minHeight: "100vh",
 }));
 
 const SectionContainer = ({

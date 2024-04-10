@@ -1,13 +1,12 @@
 import * as React from "react";
 import { useState } from "react";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Folder from "../../icons/Folder";
 import { Link as MuiLink, styled } from "@mui/material";
-import Github from "../../icons/Github";
-import Npm from "../../icons/Npm";
+import { Github } from "@/components/icons";
+import ProjectCardFooter from "./ProjectCardFooter";
 
 interface ProjectCardProps {
   children?: React.ReactNode;
@@ -16,6 +15,7 @@ interface ProjectCardProps {
   npmLink?: string;
   githubLink?: string;
   projectTechList: string[];
+  websiteLink?: string;
 }
 
 interface CardItemProps {
@@ -24,6 +24,7 @@ interface CardItemProps {
   projectDescription: string;
   npmLink?: string;
   githubLink?: string;
+  websiteLink?: string;
   projectTechList: string[];
   isHovered: boolean;
 }
@@ -44,6 +45,7 @@ const CardItem = (props: CardItemProps) => {
     isHovered,
     npmLink,
     githubLink,
+    websiteLink,
   } = props;
 
   return (
@@ -63,7 +65,7 @@ const CardItem = (props: CardItemProps) => {
           },
         }}
       >
-        <header
+        <div
           style={{
             alignSelf: "stretch",
             display: "flex",
@@ -71,16 +73,7 @@ const CardItem = (props: CardItemProps) => {
           }}
         >
           <Folder />
-          <MuiLink
-            href={githubLink}
-            target="_blank"
-            sx={{
-              alignSelf: "center",
-            }}
-          >
-            <Github hoverEffect={false} width={25} height={25} />
-          </MuiLink>
-        </header>
+        </div>
         <Typography
           variant="h3"
           component="div"
@@ -95,36 +88,12 @@ const CardItem = (props: CardItemProps) => {
         <Typography variant="body1" sx={{ fontWeight: 400 }}>
           {projectDescription}
         </Typography>
-        <footer
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            gap: "10px",
-            alignSelf: "normal",
-            alignItems: "center",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-              width: "90%",
-              alignItems: "center",
-              gap: "10px",
-            }}
-          >
-            {projectTechList.map((item, index) => (
-              <Typography variant="caption" key={index}>
-                {item}
-              </Typography>
-            ))}
-          </Box>
-          {npmLink && (
-            <MuiLink href={npmLink} target="_blank" sx={{ mt: 1 }}>
-              <Npm />
-            </MuiLink>
-          )}
-        </footer>
+        <ProjectCardFooter
+          projectTechList={projectTechList}
+          npmLink={npmLink}
+          websiteLink={websiteLink}
+          githubLink={githubLink}
+        />
       </CardContent>
     </React.Fragment>
   );
@@ -137,15 +106,17 @@ const ProjectsCard = (props: ProjectCardProps) => {
     projectTechList,
     githubLink,
     npmLink,
-    ...other
+    websiteLink,
   } = props;
   const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  console.log(websiteLink, "websiteLink");
 
   return (
     <CardWrapper
       variant="outlined"
-      onMouseEnter={() => setIsHovered((prev) => !prev)}
-      onMouseLeave={() => setIsHovered((prev) => !prev)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <CardItem
         projectTitle={projectTitle}
@@ -154,6 +125,7 @@ const ProjectsCard = (props: ProjectCardProps) => {
         isHovered={isHovered}
         githubLink={githubLink}
         npmLink={npmLink}
+        websiteLink={websiteLink}
       />
     </CardWrapper>
   );

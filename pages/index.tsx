@@ -14,7 +14,6 @@ export default function Home() {
     }
   }, [loadingCtx.isLoading]);
 
-  console.log(loadingCtx.isLoading);
 
   return (
     <>

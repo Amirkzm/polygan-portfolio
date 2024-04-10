@@ -1,60 +1,73 @@
-export const PROJECT_DATA: any[] = [
+import {
+  ProjectType,
+  SkillType,
+  WorkExperienceType,
+  socialLinkType,
+} from "./types";
+
+export const PROJECT_DATA: ProjectType[] = [
   {
     id: 0,
+    title: "Niazyab",
+    description:
+      "Niazyab is an online market for iranian people living abroad to buy and sell their stuff whether they are new or used.",
+    techList: ["NextJs", "Typescript", "Ant design"],
+    npmLink: "",
+    githubLink: "",
+    websiteLink: "http://dev.niazyab.com/home",
+  },
+  {
+    id: 1,
     title: "Spotify Clone",
     description:
       "A music app built upon the Spotify API that allows users to search, find new featured songs, play and listen to any music that can be found on Spotify.",
     techList: ["React JS", "Typescript", "MUI", "Redux Toolkit", "Vite"],
     npmLink: "",
     githubLink: "https://github.com/amirkzm/Spotify-clone",
+    websiteLink: "http://spotify-ocean.vercel.app",
   },
   {
-    id: 1,
+    id: 2,
     title: "Admin Panel",
     description:
       "A fully functional admin panel that allows users to manage teams, charts, book appointments, and more.",
     techList: ["React JS", "MUI", "Vite"],
     npmLink: "",
     githubLink: "https://github.com/amirkzm/admin-panel",
+    websiteLink: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Infinite Scroll",
     description:
       "react-infinite-scroll is a package that provides smooth scrolling on a long list of items when items need to be loaded from a server on the fly.",
     techList: ["React JS", "Typescript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amirkzm/react-infinite-scroll",
     githubLink: "https://github.com/amirkzm/react-infinite-scroll",
+    websiteLink: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Auto Complete",
     description: "A search auto-completer with dynamic backend support.",
     techList: ["React JS", "Typescript", "Rollup"],
     npmLink: "https://www.npmjs.com/package/@amirkzm/react-auto-complete",
     githubLink: "https://github.com/amirkzm/react-auto-complete-input",
+    websiteLink: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Youtube Clone",
     description:
       "A YouTube clone that provides users with an interface that closely resembles the YouTube app, with the ability to search for and watch YouTube videos, view related videos, and see and post comments.",
     techList: ["React", "Typescript", "Context API"],
     npmLink: "",
     githubLink: "https://github.com/amirkzm/youtube-clone",
-  },
-  {
-    id: 6,
-    title: "Use Conditional Effect",
-    description:
-      "This is a small React hook library that extends the capabilities of the React useEffect hook. This allows the user to stop the execution of the useEffect under specified conditions inside the hook's function, regardless of the change of dependencies.",
-    techList: ["React", "TypeScript", "Rollup"],
-    npmLink: "https://www.npmjs.com/package/@amirkzm/use-conditional-effect",
-    githubLink: "https://github.com/amirkzm/useConditionalEffect",
+    websiteLink: "http://youtube-ocean.vercel.app",
   },
 ];
 
-export const WORK_EXPERIENCE = [
+export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     id: 0,
     title: "Front-End Developer @Mehre Pars Co",
@@ -90,7 +103,7 @@ export const WORK_EXPERIENCE = [
   },
 ];
 
-export const SKILLS_LIST = [
+export const SKILLS_LIST: SkillType[] = [
   {
     id: 0,
     skillName: "JavaScript",
@@ -103,68 +116,68 @@ export const SKILLS_LIST = [
   },
   {
     id: 2,
-    skillName: "React",
+    skillName: "ReactJS",
     imgSrc: "/assets/skills/react.png",
   },
   {
     id: 3,
+    skillName: "React Native",
+    imgSrc: "/assets/skills/react.png",
+  },
+  {
+    id: 4,
     skillName: "Next.js",
     imgSrc: "/assets/skills/nextjs.png",
   },
   {
-    id: 4,
+    id: 5,
     skillName: "HTML",
     imgSrc: "/assets/skills/html.png",
   },
   {
-    id: 5,
+    id: 6,
     skillName: "CSS",
     imgSrc: "/assets/skills/css.png",
   },
   {
-    id: 11,
+    id: 7,
     skillName: "MUI",
     imgSrc: "/assets/skills/mui.png",
   },
   {
-    id: 12,
+    id: 8,
+    skillName: "Ant design",
+    imgSrc: "/assets/skills/ant-design.svg",
+  },
+
+  {
+    id: 9,
     skillName: "GitHub",
     imgSrc: "/assets/skills/github1.png",
   },
 
   {
-    id: 6,
+    id: 10,
     skillName: "Redux",
     imgSrc: "/assets/skills/redux.png",
   },
   {
-    id: 7,
+    id: 11,
     skillName: "Tailwind",
     imgSrc: "/assets/skills/tailwind.png",
   },
-  {
-    id: 8,
-    skillName: "Express.js",
-    imgSrc: "/assets/skills/expressjs.png",
-  },
-  {
-    id: 9,
-    skillName: "Webpack",
-    imgSrc: "/assets/skills/webpack.png",
-  },
-  {
-    id: 10,
-    skillName: "Rollup",
-    imgSrc: "/assets/skills/rollup.png",
-  },
-  {
-    id: 13,
-    skillName: "Babel",
-    imgSrc: "/assets/skills/babel.png",
-  },
 ];
 
-export const SOCIAL_ADDRESS = {
+export const briefSkills: string[] = [
+  "Javascript/Tyepscript",
+  "ReactJS/React Native",
+  "NextJs",
+  "MUI/Ant Design",
+  "HTML/CSS/TailwindCSS",
+  "Redux Toolkit",
+];
+
+export const SOCIAL_ADDRESS: socialLinkType = {
   instagram: "https://www.instagram.com/amir.25370",
   twitter: "https://twitter.com/amirkzm91",
   linkedin: "https://www.linkedin.com/in/amir-kazemi-33667045/",

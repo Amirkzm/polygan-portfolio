@@ -77,12 +77,11 @@ const Hero = () => {
             }}
             variant="h3"
           >
-            I&apos;m a UI/UX designer and developer Specializing in building and
-            developing modern responsive websites using{" "}
+            As a skilled{" "}
             <Box component="span" sx={{ color: "primary.main" }}>
-              React JS
+            front-end 
             </Box>
-            .
+             {" "}developer, I excel in crafting modern, responsive websites and mobile applications.
           </Typography>
         </motion.div>
         <motion.div

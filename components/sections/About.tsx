@@ -4,6 +4,7 @@ import Image from "next/image";
 import SectionContainer from "../Container/SectionContainer";
 import profilePic from "../../public/assets/avatar/profile.jpg";
 import { motion, Variants } from "framer-motion";
+import { briefSkills } from "@/utils/data";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   maxWidth: "900px",
@@ -138,8 +139,8 @@ const About = () => {
             solution.
             <br></br>
             <br></br>
-            here a list of some technologies that I&apos;ve been working with
-            recently:
+            here a briefe list of some technologies that I&apos;ve been working
+            with recently:
           </Typography>
 
           <Box
@@ -160,27 +161,11 @@ const About = () => {
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            <motion.span
-              variants={skillItemAnimation}
-              transition={{ delay: 0.1 }}
-            >
-              <StyledTypography>Javascript</StyledTypography>
-            </motion.span>
-            <motion.span variants={skillItemAnimation}>
-              <StyledTypography>Typescript</StyledTypography>
-            </motion.span>
-            <motion.span variants={skillItemAnimation}>
-              <StyledTypography>React</StyledTypography>
-            </motion.span>
-            <motion.span variants={skillItemAnimation}>
-              <StyledTypography>Next.js</StyledTypography>
-            </motion.span>
-            <motion.span variants={skillItemAnimation}>
-              <StyledTypography>Redux and Redux Toolkit</StyledTypography>
-            </motion.span>
-            <motion.span variants={skillItemAnimation}>
-              <StyledTypography>Rollup and webpack</StyledTypography>
-            </motion.span>
+            {briefSkills.map((item, index) => (
+              <motion.span variants={skillItemAnimation}>
+                <StyledTypography>{item}</StyledTypography>
+              </motion.span>
+            ))}
           </Box>
         </StyledBox>
         <Box

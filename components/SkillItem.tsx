@@ -14,7 +14,7 @@ const SkillItem = (props: SkillItemProps) => {
         display: "flex",
         justifyContent: "space-between",
         width: "150px",
-        padding: "20px 20px",
+        padding: "20px 10px",
         transition: "all 0.3s",
         "&:hover": {
           transform: "translateY(-5px)",

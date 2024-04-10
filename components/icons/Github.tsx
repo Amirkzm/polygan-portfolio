@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import theme from "../../utils/theme";
+import theme from "@/utils/theme";
 
 const Github = ({
   hoverEffect = true,
-  width,
-  height,
+  width = 30,
+  height = 30,
 }: {
   hoverEffect?: boolean;
   width?: number;
@@ -15,8 +15,8 @@ const Github = ({
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       viewBox="6 0 1 32"
-      width={width ? width : "30"}
-      height={height ? height : "30"}
+      width={width}
+      height={height}
       fill="none"
       stroke={theme.palette.background.default}
       strokeWidth="2"
