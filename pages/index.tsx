@@ -12,8 +12,7 @@ export default function Home() {
     if (loadingCtx.isLoading) {
       loadingCtx.finishLoading();
     }
-  }, [loadingCtx.isLoading]);
-
+  }, [loadingCtx.isLoading, loadingCtx]);
 
   return (
     <>

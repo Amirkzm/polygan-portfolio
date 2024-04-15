@@ -162,7 +162,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             {briefSkills.map((item, index) => (
-              <motion.span variants={skillItemAnimation}>
+              <motion.span key={index} variants={skillItemAnimation}>
                 <StyledTypography>{item}</StyledTypography>
               </motion.span>
             ))}
