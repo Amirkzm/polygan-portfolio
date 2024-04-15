@@ -130,9 +130,9 @@ const Experiences = () => {
                 borderColor: "divider",
               }}
             >
-              <Tab label="Mehr gostar" {...a11yProps(0)} />
-              <Tab label="Shiraz University" {...a11yProps(1)} />
-              <Tab label="Freelance" {...a11yProps(2)} />
+              <Tab label="Niazyab Freelance" {...a11yProps(0)} />
+              <Tab label="WebAzin" {...a11yProps(1)} />
+              {/* <Tab label="Freelance" {...a11yProps(2)} /> */}
             </Tabs>
           </Box>
           <Box
@@ -167,41 +167,22 @@ const Experiences = () => {
                     >
                       {tab.date}
                     </Typography>
-
-                    <Box
-                      component={motion.div}
-                      variants={childrenVariant}
-                      sx={{ mt: 4 }}
-                    >
-                      <StyledList>
-                        <Typography
-                          variant="body1"
-                          sx={{ color: "text.secondary" }}
-                        >
-                          {tab.partOneDesc}
-                        </Typography>
-                      </StyledList>
-                    </Box>
-                    <Box component={motion.div} variants={childrenVariant}>
-                      <StyledList>
-                        <Typography
-                          variant="body1"
-                          sx={{ color: "text.secondary" }}
-                        >
-                          {tab.partTwoDesc}
-                        </Typography>
-                      </StyledList>
-                    </Box>
-                    <Box component={motion.div} variants={childrenVariant}>
-                      <StyledList>
-                        <Typography
-                          variant="body1"
-                          sx={{ color: "text.secondary" }}
-                        >
-                          {tab.partThreeDesc}
-                        </Typography>
-                      </StyledList>
-                    </Box>
+                    {tab.description?.map((desc, index) => (
+                      <Box
+                        key={index}
+                        component={motion.div}
+                        variants={childrenVariant}
+                      >
+                        <StyledList>
+                          <Typography
+                            variant="body1"
+                            sx={{ color: "text.secondary" }}
+                          >
+                            {desc}
+                          </Typography>
+                        </StyledList>
+                      </Box>
+                    ))}
                   </Box>
                 </TabPanel>
               );

@@ -70,36 +70,29 @@ export const PROJECT_DATA: ProjectType[] = [
 export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     id: 0,
-    title: "Front-End Developer @Mehre Pars Co",
-    date: "2021-2022",
-    partOneDesc:
-      "Wrote modern, performant, maintainable code and updated previously written code from vanilla JavaScript to React components.",
-    partTwoDesc:
-      "Converted existing CBC (class-based components) to functional hooks and tried to renew the code structure.",
-    partThreeDesc:
-      "Communicated with multi-disciplinary teams of engineers and designers on a daily basis.",
+    title: "Freelance Front-End Next.Js Developer ",
+    date: "2023-2024",
+    description: [
+      "Collaborated with backend developers using Django Rest Framework and UI/UX designers to implement a Next.js project.",
+      "Utilized Figma designs provided by UX designers to create UI elements, ensuring consistency and adherence to design specifications.",
+      "Optimized performance and user experience through responsive design and efficient use of Next.js features and server-side rendering.",
+      "Integrated Ant Design as the UI framework, leveraging its components and styles for a polished user experience.",
+      "Implemented user authentication using JWT tokens and React Context API, ensuring secure access to the application's features.",
+      "Developed middleware and server actions to handle user requests and interactions, utilizing the latest features of Next.js for optimized performance.",
+      "Utilized Tailwind CSS for styling, providing a customizable and maintainable approach to design and layout.",
+    ],
   },
   {
     id: 1,
-    title: "Freelance Python Developer",
-    date: "2019-2020",
-    partOneDesc:
-      "Collaborated with two machine learning engineers to design a system to predict the stock market.",
-    partTwoDesc:
-      "My main goal was to extract the required features of candles based on previous year's data and organize them to use in machine learning and AI algorithms.",
-    partThreeDesc:
-      "Worked with NumPy and Pandas as the main tools to achieve the above-mentioned tasks.",
-  },
-  {
-    id: 2,
-    title: "Back-End Developer @ Shiraz University Game Festival Dev Team",
-    date: "2018-2019",
-    partOneDesc:
-      "Designed and developed a database with PostgreSQL and determined the relation between models for a website for the Shiraz game festival competition.",
-    partTwoDesc:
-      "Developed and implemented the ability of user registration, selling tickets, timetable of matches, news, events, and so on.",
-    partThreeDesc:
-      "Developed a Rest API in collaboration with a team of back-end and front-end developers.",
+    title: "Front-End React.Js Developer @Azinweb",
+    date: "2020-2022",
+    description: [
+      "Developed a comprehensive test maker application catering to schools and private tutoring organizations, allowing users to create and manage quizzes and exams.",
+      "Collaborated with the design and backend teams to implement user-friendly interfaces and integrate with backend APIs",
+      "Implemented user authentication and access control, allowing different user roles with varying levels of access to the application's features",
+      "Utilized Redux for efficient state management, ensuring data consistency and seamless interaction between components.",
+      "Integrated Material-UI (MUI) components alongside data visualization libraries (chartjs) to design polished user interface with insightful progress charts, facilitating user comprehension of strengths and areas for improvement.",
+    ],
   },
 ];
 

@@ -11,7 +11,7 @@ import { Box, Container } from "@mui/system";
 import Github from "../components/icons/Github";
 import LinkedIn from "../components/icons/LinkedIn";
 import SkillItem from "../components/SkillItem";
-import { SKILLS_LIST, SOCIAL_ADDRESS } from "../utils/data";
+import { SKILLS_LIST, SOCIAL_ADDRESS, WORK_EXPERIENCE } from "../utils/data";
 import Head from "next/head";
 import { useContext } from "react";
 import LoadingContext from "../context/LoadingContext";
@@ -144,125 +144,35 @@ const Resume = () => {
           <Typography variant="h2" textAlign={"center"}>
             Work Experience
           </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-            }}
-          >
+          {WORK_EXPERIENCE.map((work) => (
             <Box
+              key={work.id}
               sx={{
                 display: "flex",
-                justifyContent: "space-between",
-                width: "100%",
-                alignItems: "center",
+                flexDirection: "column",
+                alignItems: "start",
               }}
             >
-              <Typography variant="h3">
-                Front End Web Developer At Mehrpars Co
-              </Typography>
-              <Typography variant="caption">2021-2022</Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "100%",
+                  alignItems: "center",
+                }}
+              >
+                <Typography variant="h3">{work.title}</Typography>
+                <Typography variant="caption">{work.date}</Typography>
+              </Box>
+              <List>
+                {work.description?.map((desc, index) => (
+                  <StyledListItem key={index}>
+                    <ListItemText inset>{desc}</ListItemText>
+                  </StyledListItem>
+                ))}
+              </List>
             </Box>
-            <List sx={{ display: "list-item" }}>
-              <StyledListItem>
-                <ListItemText inset>
-                  Develope some react packages including hooks and components
-                  like auto-complete and infinite-scroll-loader.The main purpose
-                  was to use components with built-in ability of handling server
-                  responses.They have been developed in order to help other
-                  developers of company and also have been used in other
-                  projects as well.
-                </ListItemText>
-              </StyledListItem>
-              <StyledListItem>
-                <ListItemText inset>
-                  Implement and design a dashboard with built-in chart feature
-                  for various parts of the company internal reports.
-                </ListItemText>
-              </StyledListItem>
-              <StyledListItem>
-                <ListItemText inset>
-                  Upgrade already written code in vanila javascript to react and
-                  also convert class-based components to functional components.
-                </ListItemText>
-              </StyledListItem>
-              <StyledListItem>
-                <ListItemText inset>
-                  Increase the reusability and readability of the written code
-                  by extracting and writing custom hooks.
-                </ListItemText>
-              </StyledListItem>
-            </List>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-              alignItems: "center",
-            }}
-          >
-            <Typography variant="h3">Freelance Python Developer</Typography>
-            <Typography variant="caption">2019-2020</Typography>
-          </Box>
-          <List>
-            <StyledListItem>
-              <ListItemText inset>
-                I have collaborated with two machine learning engineers to
-                design a system to predict the stock market.
-              </ListItemText>
-            </StyledListItem>
-            <StyledListItem>
-              <ListItemText inset>
-                My main goal was to extract the required features of candles
-                based on previous years data and organize them to use in machine
-                learning and AI algorithms.
-              </ListItemText>
-            </StyledListItem>
-            <StyledListItem>
-              <ListItemText inset>
-                Working with NumPy and Pandas was the main tools to achieve the
-                above mentioned tasks.
-              </ListItemText>
-            </StyledListItem>
-          </List>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-              alignItems: "center",
-            }}
-          >
-            <Typography variant="h3">
-              Back-End Developer @ Shiraz University Game Festival Dev Team
-            </Typography>
-            <Typography variant="caption">2018-2019</Typography>
-          </Box>
-          <List>
-            <StyledListItem>
-              <ListItemText inset>
-                Design and develop a database with PostgreSQL and determine the
-                relationships between models for a website for the Shiraz Game
-                Festival competition.
-              </ListItemText>
-            </StyledListItem>
-            <StyledListItem>
-              <ListItemText inset>
-                Develop and implement the ability for users to register, buy and
-                sell tickets, view the timetable of matches, read news and
-                updates, and view upcoming events on the website for the Shiraz
-                game festival competition.
-              </ListItemText>
-            </StyledListItem>
-            <StyledListItem>
-              <ListItemText inset>
-                I have developed a Rest API in corporating with a team of
-                back-end and front-end developers.
-              </ListItemText>
-            </StyledListItem>
-          </List>
+          ))}
         </Box>
         <Divider />
         <Box
@@ -294,9 +204,9 @@ const Resume = () => {
               }}
             >
               <Typography variant="body1">
-                Master Computer Engineering At University of Genoa,Italy
+                Master Strategy Engineering At University of Genoa,Italy
               </Typography>
-              <Typography variant="caption">2021-Present</Typography>
+              <Typography variant="caption">2022-Present</Typography>
             </Box>
             <Box
               sx={{
