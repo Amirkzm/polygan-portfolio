@@ -122,7 +122,7 @@ const Experiences = () => {
             <Tabs
               value={tabIndex}
               onChange={handleTabChange}
-              aria-label="basic tabs example"
+              aria-label="works tabs"
               orientation={isMobile ? "horizontal" : "vertical"}
               sx={{
                 borderRight: isMobile ? 0 : 1,
@@ -132,7 +132,6 @@ const Experiences = () => {
             >
               <Tab label="Niazyab Freelance" {...a11yProps(0)} />
               <Tab label="WebAzin" {...a11yProps(1)} />
-              {/* <Tab label="Freelance" {...a11yProps(2)} /> */}
             </Tabs>
           </Box>
           <Box

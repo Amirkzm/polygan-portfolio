@@ -26,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
               flexDirection: "column",
             }}
           >
-            <Box sx={{}}>
+            <Box>
               <Grid container spacing={3} direction="row">
                 <Grid item xs={0} md={1}>
                   <LeftBorder />

@@ -110,8 +110,6 @@ const ProjectsCard = (props: ProjectCardProps) => {
   } = props;
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  console.log(websiteLink, "websiteLink");
-
   return (
     <CardWrapper
       variant="outlined"

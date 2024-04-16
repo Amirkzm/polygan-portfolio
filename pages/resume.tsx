@@ -43,7 +43,6 @@ const StyledListItem = styled("li")(({ theme }) => ({
 }));
 const Resume = () => {
   const loadingCtx = useContext(LoadingContext);
-  console.log(loadingCtx.isLoading);
   return (
     <PathContainer>
       <Head>

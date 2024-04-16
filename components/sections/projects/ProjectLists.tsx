@@ -20,7 +20,7 @@ const cardAnimation = {
 const ProjectLists = () => {
   return (
     <SectionContainer id="Work">
-      <Typography variant="h2" sx={{ textAlign: "center", mb: 5 }}>
+      <Typography variant="h2" sx={{ textAlign: "center", my: 8 }}>
         Some of my projects
       </Typography>
       <Box

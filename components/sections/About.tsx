@@ -182,11 +182,9 @@ const About = () => {
               alt="Picture of the author"
               style={{
                 borderRadius: "3%",
-                maxWidth: "300px",
-                maxHeight: "300px",
-                width: "80vw",
-                height: "80vw",
               }}
+              width={300}
+              height={300}
             />
           </ImageWrapper>
         </Box>
