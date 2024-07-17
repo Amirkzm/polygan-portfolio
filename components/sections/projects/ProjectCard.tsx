@@ -4,8 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Folder from "../../icons/Folder";
-import { Link as MuiLink, styled } from "@mui/material";
-import { Github } from "@/components/icons";
+import { styled } from "@mui/material";
 import ProjectCardFooter from "./ProjectCardFooter";
 
 interface ProjectCardProps {

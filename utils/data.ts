@@ -14,7 +14,7 @@ export const PROJECT_DATA: ProjectType[] = [
     techList: ["NextJs", "Typescript", "Ant design"],
     npmLink: "",
     githubLink: "",
-    websiteLink: "http://dev.niazyab.com/home",
+    websiteLink: "niazyab.com",
   },
   {
     id: 1,
