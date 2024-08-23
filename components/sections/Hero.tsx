@@ -79,7 +79,7 @@ const Hero = () => {
           >
             As a skilled{" "}
             <Box component="span" sx={{ color: "primary.main" }}>
-            front-end 
+            full-stack 
             </Box>
              {" "}developer, I excel in crafting modern, responsive websites and mobile applications.
           </Typography>

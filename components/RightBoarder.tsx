@@ -16,7 +16,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
   rotate: "90deg",
-  marginBottom: "130px",
+  marginBottom: "160px",
   transition: "all 0.5s",
   "&:hover": {
     color: theme.palette.primary.main,
@@ -29,7 +29,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 const RightBoarder = () => {
   return (
     <StyledBox sx={{}}>
-      <StyledTypography>amirkazemi@gmail.com</StyledTypography>
+      <StyledTypography>Amir.kzm@protonmail.com</StyledTypography>
       <Box
         sx={{
           width: "2px",

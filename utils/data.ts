@@ -17,6 +17,24 @@ export const PROJECT_DATA: ProjectType[] = [
     websiteLink: "niazyab.com",
   },
   {
+    id: 5,
+    title: "Realestate app",
+    description:
+      "A full MERN stack realestate app that allows users to posts their properties, search for properties, and contact the owner with full functional real-time chat application.",
+    techList: [
+      "React",
+      "Typescript",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "Redis",
+      "Docker",
+    ],
+    npmLink: "",
+    githubLink: "https://github.com/Amirkzm/real_state_full",
+    websiteLink: "https://amirkzm-showcase.online",
+  },
+  {
     id: 1,
     title: "Spotify Clone",
     description:
@@ -55,16 +73,6 @@ export const PROJECT_DATA: ProjectType[] = [
     githubLink: "https://github.com/amirkzm/react-auto-complete-input",
     websiteLink: "",
   },
-  {
-    id: 5,
-    title: "Youtube Clone",
-    description:
-      "A YouTube clone that provides users with an interface that closely resembles the YouTube app, with the ability to search for and watch YouTube videos, view related videos, and see and post comments.",
-    techList: ["React", "Typescript", "Context API"],
-    npmLink: "",
-    githubLink: "https://github.com/amirkzm/youtube-clone",
-    websiteLink: "http://youtube-ocean.vercel.app",
-  },
 ];
 
 export const WORK_EXPERIENCE: WorkExperienceType[] = [
@@ -73,7 +81,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     title: "Freelance Front-End Next.Js Developer ",
     date: "2023-2024",
     description: [
-      "Collaborated with backend developers using Django Rest Framework and UI/UX designers to implement a Next.js project.",
+      "Collaborated with backend developers using Django Rest Framework and UI/UX designers to implement a Next.js project. Contributed to RESTful API creation, data modeling, and implemented JWT-based authentication and authorization.",
       "Utilized Figma designs provided by UX designers to create UI elements, ensuring consistency and adherence to design specifications.",
       "Optimized performance and user experience through responsive design and efficient use of Next.js features and server-side rendering.",
       "Integrated Ant Design as the UI framework, leveraging its components and styles for a polished user experience.",
@@ -84,7 +92,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   },
   {
     id: 1,
-    title: "Front-End React.Js Developer @Azinweb",
+    title: "Front-End React.Js Developer at Pishgaman Sadra",
     date: "2020-2022",
     description: [
       "Developed a comprehensive test maker application catering to schools and private tutoring organizations, allowing users to create and manage quizzes and exams.",
@@ -159,15 +167,40 @@ export const SKILLS_LIST: SkillType[] = [
     skillName: "Tailwind",
     imgSrc: "/assets/skills/tailwind.png",
   },
+  {
+    id: 12,
+    skillName: "Node.js",
+    imgSrc: "/assets/skills/nodejs.png",
+  },
+  {
+    id: 13,
+    skillName: "Express",
+    imgSrc: "/assets/skills/express.png",
+  },
+  {
+    id: 14,
+    skillName: "MongoDB",
+    imgSrc: "/assets/skills/mongo.png",
+  },
+  {
+    id: 15,
+    skillName: "SQL",
+    imgSrc: "/assets/skills/sql.png",
+  },
+  {
+    id: 16,
+    skillName: "Docker",
+    imgSrc: "/assets/skills/docker.png",
+  },
 ];
 
 export const briefSkills: string[] = [
   "Javascript/Tyepscript",
   "ReactJS/React Native",
-  "NextJs",
-  "MUI/Ant Design",
+  "Next.js",
+  "Node.js and Express",
   "HTML/CSS/TailwindCSS",
-  "Redux Toolkit",
+  "MongoDB/PostgreSQL",
 ];
 
 export const SOCIAL_ADDRESS: socialLinkType = {

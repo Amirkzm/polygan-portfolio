@@ -131,7 +131,7 @@ const Experiences = () => {
               }}
             >
               <Tab label="Niazyab Freelance" {...a11yProps(0)} />
-              <Tab label="WebAzin" {...a11yProps(1)} />
+              <Tab label="Pishgaman Sadra" {...a11yProps(1)} />
             </Tabs>
           </Box>
           <Box

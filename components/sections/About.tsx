@@ -121,26 +121,16 @@ const About = () => {
             </Typography>
           </Box>
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
-            Hello! My name is Amir and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2017 when I
-            decided to develop a simple online quiz app in my free time for a
-            non-profit organization. I started learning Django, and after
-            finishing some small-size projects, I developed a complete Rest API
-            for the Shiraz University Game festival with Django Rest Framework.
-            <br></br>
-            <br></br>
-            Back in mid-2020, I got familiar with React JS and the world of
-            JavaScript front-end technologies. It seemed quite enchanting, and I
-            started learning React. In 2021, I started to work at Mehr Gostaer
-            company as a React front-end developer.
-            <br></br>
-            <br></br>I enjoy coding, working as a team member, and arguing and
-            challenging the concepts on the table until we find the best
-            solution.
-            <br></br>
-            <br></br>
-            here a briefe list of some technologies that I&apos;ve been working
-            with recently:
+            I am a passionate Full-Stack Web Developer with a strong focus on
+            delivering high-performance, scalable, and user-friendly
+            applications. With experience in both frontend and backend
+            development, I specialize in modern frameworks like Next.js and
+            React, as well as robust backend solutions using Django and Node.js.
+            My expertise includes creating RESTful APIs, implementing secure
+            authentication and authorization systems, and optimizing web
+            applications for speed and SEO. I am committed to writing clean,
+            maintainable code and enjoy tackling complex problems to deliver
+            seamless digital experiences.
           </Typography>
 
           <Box
@@ -182,9 +172,11 @@ const About = () => {
               alt="Picture of the author"
               style={{
                 borderRadius: "3%",
+                maxWidth: "250px",
+                maxHeight: "250px",
               }}
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </ImageWrapper>
         </Box>
